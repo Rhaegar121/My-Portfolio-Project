@@ -263,10 +263,46 @@ button {
 }
 
 /* form-session */
+#form-session {
+  background-image: url(photo/illustration-contact-form.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 #form-session .supporting-text {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-  margin: 0px 8px;
+  padding: 60px 45px;
+}
+#form-session #form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form li {
+  list-style: none;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+#form li input {
+  border: 1px solid #D0D9D4;
+  width: 327px;
+  height: 48px;
+}
+#form li input::placeholder, textarea::placeholder {
+  padding-left: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#form li textarea {
+  width: 327px;
+  height: 114px;
+  border: 1px solid #60C095;
+}
+#form li textarea::placeholder {
+  padding: 12px 0px 0px 16px;
 }

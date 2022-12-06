@@ -144,6 +144,8 @@ p {
 }
 
 .text .tag li {
+  float: left;
+  margin-right: 3px;
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;

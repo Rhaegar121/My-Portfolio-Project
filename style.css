@@ -139,9 +139,6 @@ p {
 }
 
 .text .tag {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 20px 0;
 }
@@ -159,6 +156,8 @@ p {
 }
 
 button {
+  float: left;
+  margin-right: 3px;
   background: #36b37f;
   border-radius: 4px;
   padding: 12px;

@@ -261,3 +261,12 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 8px;
 }
+
+/* form-session */
+#form-session .supporting-text {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  margin: 0px 8px;
+}

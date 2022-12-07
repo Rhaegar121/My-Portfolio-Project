@@ -519,4 +519,7 @@ footer {
   footer .social-media-icon li {
     list-style: none;
   }
+  .social-media-icon-form, .footeremail {
+    display: none;
+  }
 }

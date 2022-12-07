@@ -20,8 +20,10 @@
   font-weight: 600;
   text-decoration: none;
   color: #172b4d;
+} 
+.toolbar .nav-item {
+  display: none;
 }
-
 .toolbar nav .fa-bars {
   font-size: 20px;
   margin-right: 10px;
@@ -87,15 +89,11 @@ p {
 }
 
 /* work section */
-#work .work-container {
-  display: grid;
-  row-gap: 20px;
-  grid-template-columns: 327px;
-  grid-template-rows: 170px 474px 474px 474px 474px 474px 474px;
-  justify-content: center;
+#work {
+  position: relative;
+  border: 1px solid white;
 }
-
-#work .work-container .work-title {
+#work .work-title {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -103,16 +101,23 @@ p {
   text-align: center;
   text-transform: capitalize;
   width: 327px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: linear-gradient(#36b37e, #36b37e);
   background-size: 48px 4px;
   background-position: center bottom;
   background-repeat: no-repeat;
-  margin-bottom: 50px;
+  padding-bottom: 24px;
 }
-
+#work .work-container {
+  margin-top: 200px;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 327px;
+  grid-template-rows: 474px 474px 474px 474px 474px 474px;
+  justify-content: center;
+}
 #work .work-container .work-card {
   border-radius: 8px;
   border: 1px solid #d0d9d4;
@@ -305,4 +310,58 @@ button {
 }
 #form li textarea::placeholder {
   padding: 12px 0px 0px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar {
+    padding: 26px 610px;
+  }
+  .toolbar h1,nav {
+    display: none;
+  }
+  .toolbar .nav-item {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #344563;
+  }
+  .headline {
+    background-image: url(photo/Header-llustration-desktop@2x.png);
+    background-size: contain;
+    width: 100%;
+    height: 1434.3px;
+    transform: translateY(-233px);
+    padding: 410px 375px 610px 375px;
+    gap: 24px;
+    justify-content: space-evenly;
+  }
+  .headline .primary h1,p {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  .headline .supporting-text {
+    line-height: 32px;
+  }
+  .headline .action .fa-chevron-down {
+    margin-top: 50px;
+  }
+  #work {
+    margin-top: -200px;
+  }
+  #work .work-title {
+    width: 447px;
+    background-image: none;
+  }
+  #work .work-container {
+    grid-template-columns: 369px 369px 369px;
+    grid-template-rows: 474px 474px;
+    gap: 24px;
+    margin-top: 100px;
+  }
+  .work-card .work-img {
+    width: 369px;
+  }
 }

@@ -318,6 +318,7 @@ textarea::placeholder {
   column-gap: 15px;
   text-decoration: none;
   align-items: baseline;
+  margin-top: 45px;
 }
 
 #form-session .social-media-icon-form li {
@@ -330,5 +331,5 @@ textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  padding-bottom: 100px;
+  margin-bottom: 350px;
 }

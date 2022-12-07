@@ -285,19 +285,15 @@ button {
   align-items: center;
 }
 
-#form li {
-  list-style: none;
-  border-radius: 4px;
+#form input {
   margin-bottom: 24px;
-}
-
-#form li input {
+  border-radius: 4px;
   border: 1px solid #d0d9d4;
   width: 327px;
   height: 48px;
 }
 
-#form li input::placeholder,
+#form input::placeholder,
 textarea::placeholder {
   padding-left: 16px;
   font-size: 15px;
@@ -305,13 +301,14 @@ textarea::placeholder {
   line-height: 24px;
 }
 
-#form li textarea {
+#form textarea {
   width: 327px;
   height: 114px;
   border: 1px solid #60c095;
+  margin-bottom: 24px;
 }
 
-#form li textarea::placeholder {
+#form textarea::placeholder {
   padding: 12px 0 0 16px;
 }
 

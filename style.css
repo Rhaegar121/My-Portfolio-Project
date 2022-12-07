@@ -386,4 +386,33 @@ button {
     grid-template-rows: 352px;
     gap: 24px;
   }
+  #form-session {
+    padding: 80px 180px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  #form-session .supporting-text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+    padding: 50px 0;
+    width: 480px;
+  }
+  #form-session form {
+    width: 670px;
+  }
+  #form-session #form {
+    align-items: flex-start;
+  }
+  #form li input {
+    width: 670px;
+  }
+  #form li textarea {
+    width: 670px;
+  }
+  #form li textarea::placeholder {
+    color: #091E42;
+  }
 }

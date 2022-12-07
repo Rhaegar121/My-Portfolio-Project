@@ -292,12 +292,13 @@ button {
 }
 
 #form li input {
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   width: 327px;
   height: 48px;
 }
 
-#form li input::placeholder, textarea::placeholder {
+#form li input::placeholder,
+textarea::placeholder {
   padding-left: 16px;
   font-size: 15px;
   font-weight: 400;
@@ -307,14 +308,14 @@ button {
 #form li textarea {
   width: 327px;
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
 }
 
 #form li textarea::placeholder {
-  padding: 12px 0px 0px 16px;
+  padding: 12px 0 0 16px;
 }
 
-.social-media-icon-form {
+#form-session .social-media-icon-form {
   display: flex;
   justify-content: center;
   column-gap: 15px;
@@ -322,11 +323,11 @@ button {
   align-items: baseline;
 }
 
-.social-media-icon-form li {
+#form-session .social-media-icon-form li {
   list-style: none;
 }
 
-.footeremail {
+#form-session .footeremail {
   margin-top: 15px;
   align-items: center;
   font-size: 16px;

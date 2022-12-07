@@ -312,6 +312,12 @@ button {
 #form li textarea::placeholder {
   padding: 12px 0px 0px 16px;
 }
+#frame1, #frame2 {
+  display: none;
+}
+footer {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .toolbar {
@@ -392,6 +398,7 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     gap: 5px;
+    background-image: url(photo/Frame.svg);
   }
   #form-session .supporting-text {
     font-size: 30px;
@@ -414,5 +421,36 @@ button {
   }
   #form li textarea::placeholder {
     color: #091E42;
+  }
+  #frame1 {
+    display: block;
+    position: absolute;
+    width: 236px;
+    height: 261.09px;
+    top: 3622px;
+  }    
+  #frame2 {
+    display: block;
+    position: absolute;
+    width: 130.28px;
+    height: 105.85px;
+    left: 330px;
+    top: 3722px;
+  }
+  footer {
+    margin-top: 80px;
+    display: block;
+  }
+  footer .social-media-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    border-top: 1px solid #DFE1E6;
+    padding: 25px 0px;
+  }
+  footer .social-media-icon li {
+    list-style: none;
+    margin-right: 18px;
   }
 }

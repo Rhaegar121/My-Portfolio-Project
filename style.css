@@ -273,6 +273,7 @@ button {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  margin-top: 150px;
 }
 #form-session .supporting-text {
   font-size: 40px;
@@ -427,7 +428,7 @@ footer {
     position: absolute;
     width: 236px;
     height: 261.09px;
-    top: 3622px;
+    top: 3752px;
   }    
   #frame2 {
     display: block;
@@ -435,7 +436,7 @@ footer {
     width: 130.28px;
     height: 105.85px;
     left: 330px;
-    top: 3722px;
+    top: 3872px;
   }
   footer {
     margin-top: 80px;

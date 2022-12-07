@@ -112,6 +112,10 @@ button:active {
   background: #008552;
 }
 
+#form-session .social-media-icon-form li {
+  list-style: none;
+}
+
 /* about section */
 #about {
   background-image: url(photo/illustration\ 1-\ about\ me-mobile.svg);
@@ -334,6 +338,24 @@ textarea::placeholder {
   color: #091e42;
 }
 
+#form-session .social-media-icon-form {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  text-decoration: none;
+  align-items: baseline;
+  margin-top: 45px;
+}
+
+#form-session .footeremail {
+  margin-top: 15px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 350px;
+}
+
 #frame1,
 #frame2 {
   display: none;
@@ -484,6 +506,10 @@ footer {
     color: #091e42;
   }
 
+  #form-session .social-media-icon-form {
+    display: none;
+  }
+
   #frame1 {
     display: block;
     position: absolute;
@@ -519,7 +545,8 @@ footer {
   footer .social-media-icon li {
     list-style: none;
   }
-  .social-media-icon-form, .footeremail {
+
+  .footeremail {
     display: none;
   }
 }

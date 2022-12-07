@@ -195,8 +195,6 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* border: 1px solid red; */
 }
 
 #about .about-title {
@@ -272,6 +270,9 @@ button {
   background-image: url(photo/illustration-contact-form.svg);
   background-position: bottom right;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 #form-session .supporting-text {
   font-size: 40px;
@@ -363,5 +364,26 @@ button {
   }
   .work-card .work-img {
     width: 369px;
+  }
+  #about {
+    margin-top: 200px;
+    background-image: url(photo/illustration\ about\ me\ desktop.svg);
+  }
+  #about .about-me {
+    background-image: url(photo/illustration-about-me-2-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 260px;
+    justify-content: space-around;
+  }
+  #about .about-me .supporting-text {
+    width: 810px;
+    line-height: 32px;
+    color: #42526E;
+  }
+  #about .about-container {
+    grid-template-columns: 369px 369px 369px;
+    grid-template-rows: 352px;
+    gap: 24px;
   }
 }

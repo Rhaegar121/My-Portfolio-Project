@@ -139,14 +139,13 @@ p {
 }
 
 .text .tag {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: 20px 0;
 }
 
 .text .tag li {
+  float: left;
+  margin-right: 3px;
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
@@ -159,6 +158,8 @@ p {
 }
 
 button {
+  float: left;
+  margin-right: 3px;
   background: #36b37f;
   border-radius: 4px;
   padding: 12px;
@@ -168,6 +169,14 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background: #008552;
 }
 
 /* about section */
@@ -259,4 +268,76 @@ button {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-bottom: 8px;
+}
+
+/* form-session */
+#form-session {
+  background-image: url(photo/illustration-contact-form.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+#form-session .supporting-text {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  padding: 60px 45px;
+}
+
+#form-session #form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form input {
+  margin-bottom: 24px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+  width: 327px;
+  height: 48px;
+}
+
+#form input::placeholder,
+textarea::placeholder {
+  padding-left: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+#form textarea {
+  width: 327px;
+  height: 114px;
+  border: 1px solid #60c095;
+  margin-bottom: 24px;
+}
+
+#form textarea::placeholder {
+  padding: 12px 0 0 16px;
+}
+
+#form-session .social-media-icon-form {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  text-decoration: none;
+  align-items: baseline;
+  margin-top: 45px;
+}
+
+#form-session .social-media-icon-form li {
+  list-style: none;
+}
+
+#form-session .footeremail {
+  margin-top: 15px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 350px;
 }

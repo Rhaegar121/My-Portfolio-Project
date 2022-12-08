@@ -360,6 +360,11 @@ button:active {
   border: 1px solid #d0d9d4;
   width: 100%;
   height: 48px;
+  transition: all 0.2s ease-out;
+}
+
+#form input:hover {
+  transform: translateX(1.5%);
 }
 
 #form input::placeholder,
@@ -375,6 +380,11 @@ textarea::placeholder {
   height: 114px;
   border: 1px solid #60c095;
   margin-bottom: 24px;
+  transition: all 0.2s ease-out;
+}
+
+#form textarea:hover {
+  transform: translateX(1.5%);
 }
 
 #form textarea::placeholder {

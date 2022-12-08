@@ -52,11 +52,45 @@ p {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  color: #36b37f;
+}
+
+.headline .primary h1 {
   color: #172b4d;
+  transition: font-size 0.5s ease-out;
+  animation: 3s 1 slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .headline .primary p {
+  animation: 3s 1 slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: -300%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.headline .primary h1:hover {
+  font-size: 55px;
   color: #36b37f;
+  cursor: pointer;
 }
 
 .supporting-text {

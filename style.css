@@ -52,11 +52,47 @@ p {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
+  color: #36b37f;
+}
+
+.headline .primary h1 {
   color: #172b4d;
+  transition: font-size 0.5s ease-out;
+  animation: 3s 1 slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .headline .primary p {
+  animation: 3s 1 slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: -300%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.headline .primary h1:hover {
+  font-size: 55px;
   color: #36b37f;
+  cursor: pointer;
 }
 
 .supporting-text {
@@ -102,10 +138,12 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  transition: all 250ms ease-in-out;
 }
 
 button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 button:active {
@@ -166,6 +204,11 @@ button:active {
   background: #ebf0ee;
   border-radius: 8px;
   padding: 0 30px;
+  transition: all 0.5s ease-out;
+}
+
+#about .about-container .about-card:hover {
+  transform: scale(1.05);
 }
 
 #about .about-container .about-card .about-img {
@@ -242,6 +285,11 @@ button:active {
 #work .container .work-container .work-card {
   border-radius: 8px;
   border: 1px solid #d0d9d4;
+  transition: all 0.5s ease-out;
+}
+
+#work .container .work-container .work-card:hover {
+  transform: scale(1.05);
 }
 
 #work .container .work-container .work-card .work-img {
@@ -316,6 +364,11 @@ button:active {
   border: 1px solid #d0d9d4;
   width: 100%;
   height: 48px;
+  transition: all 0.2s ease-out;
+}
+
+#form input:hover {
+  transform: translateX(1.5%);
 }
 
 #form input::placeholder,
@@ -331,6 +384,11 @@ textarea::placeholder {
   height: 114px;
   border: 1px solid #60c095;
   margin-bottom: 24px;
+  transition: all 0.2s ease-out;
+}
+
+#form textarea:hover {
+  transform: translateX(1.5%);
 }
 
 #form textarea::placeholder {

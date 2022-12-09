@@ -136,10 +136,12 @@ button {
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
+  transition: all 250ms ease-in-out;
 }
 
 button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 button:active {

@@ -17,6 +17,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+      - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 
 <!-- PROJECT DESCRIPTION -->
@@ -53,6 +54,14 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://rhaegar121.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

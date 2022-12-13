@@ -357,6 +357,10 @@ button:active {
   align-items: center;
 }
 
+#form label{
+  display: none;
+}
+
 #form input {
   border-radius: 4px;
   margin-bottom: 24px;

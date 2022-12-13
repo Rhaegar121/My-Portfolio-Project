@@ -46,7 +46,7 @@
   gap: 58px;
 }
 
-.headline .primary h1,
+.headline .primary h2,
 p {
   text-align: center;
   font-size: 40px;
@@ -55,7 +55,7 @@ p {
   color: #36b37f;
 }
 
-.headline .primary h1 {
+.headline .primary h2 {
   color: #172b4d;
   transition: font-size 0.5s ease-out;
   animation: 3s 1 slidein;
@@ -89,7 +89,7 @@ p {
   }
 }
 
-.headline .primary h1:hover {
+.headline .primary h2:hover {
   font-size: 55px;
   color: #36b37f;
   cursor: pointer;
@@ -342,7 +342,7 @@ button:active {
   margin-top: 150px;
 }
 
-#form-session h1 {
+#form-session h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -460,7 +460,7 @@ footer {
     justify-content: space-evenly;
   }
 
-  .headline .primary h1,
+  .headline .primary h2,
   p {
     font-size: 48px;
     font-weight: 800;
@@ -536,7 +536,7 @@ footer {
     justify-content: space-between;
   }
 
-  #form-session h1 {
+  #form-session h2 {
     font-size: 30px;
     font-weight: 700;
     line-height: 52px;

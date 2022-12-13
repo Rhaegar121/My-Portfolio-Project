@@ -54,7 +54,7 @@
   color: #36b37f;
 }
 
-.headline .primary h2:first-child {
+.headline .primary #intro-name {
   color: #172b4d;
   transition: font-size 0.5s ease-out;
   animation: 3s 1 slidein;
@@ -72,7 +72,7 @@
   }
 }
 
-.headline .primary #sec-h2 {
+.headline .primary h2:last-child {
   animation: 3s 1 slideout;
 }
 
@@ -88,7 +88,7 @@
   }
 }
 
-.headline .primary h2:first-child:hover {
+.headline .primary #intro-name:hover {
   font-size: 55px;
   color: #36b37f;
   cursor: pointer;

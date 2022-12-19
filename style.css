@@ -22,13 +22,31 @@
   color: #172b4d;
 }
 
-.toolbar .nav-item {
+.toolbar #menu {
   display: none;
+  position: absolute;
+  top: 10%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  left: 0;
+}
+
+.toolbar #menu .nav-item {
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+  text-decoration: none;
+  margin: 40px;
 }
 
 .toolbar nav .fa-bars {
   font-size: 20px;
   margin-right: 10px;
+  z-index: 999;
 }
 
 .headline {
@@ -204,6 +222,7 @@ button:active {
   border-radius: 8px;
   padding: 0 30px;
   transition: all 0.5s ease-out;
+  position: relative;
 }
 
 #about .about-container .about-card:hover {
@@ -213,7 +232,10 @@ button:active {
 #about .about-container .about-card .about-img {
   width: 120px;
   height: 120px;
-  margin: 40px 0 20px 94px;
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+  transform: translateX(-50%);
 }
 
 #about .about-container .about-card .about-text {
@@ -221,6 +243,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin-top: 184px;
 }
 
 #about .about-container .about-card .about-text .project-title {
@@ -312,7 +335,7 @@ button:active {
 }
 
 #work .container .work-container .work-card .text .tag {
-  width: 100%;
+  width: 305px;
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -442,11 +465,15 @@ footer {
     display: none;
   }
 
-  .toolbar .nav-item {
-    display: inline-block;
-    text-decoration: none;
+  .toolbar #menu {
+    top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toolbar #menu .nav-item {
+    display: inline;
     font-size: 15px;
-    font-weight: 600;
     line-height: 20px;
     color: #344563;
   }

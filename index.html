@@ -20,11 +20,13 @@
   </head>
 
   <body>
-    <header class="toolbar">
-      <h1><a href="#">Welcome</a></h1>
-      <a href="#" class="nav-item">Portfolio</a>
-      <a href="#" class="nav-item">About</a>
-      <a href="#" class="nav-item">Contact</a>
+    <header class="toolbar" id="portfolio">
+      <h1><a href="#" id="welcome">Welcome</a></h1>
+      <div id="menu">
+        <a href="#portfolio" class="nav-item">Portfolio</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#form-session" class="nav-item">Contact</a>
+      </div>
       <nav><i class="fa-solid fa-bars"></i></nav>
     </header>
 
@@ -151,12 +153,16 @@
         <div class="about-me">
           <h2 class="about-title">About me</h2>
           <p class="supporting-text">
-            I can help you build a product , feature or website Look through some
-            of my work and experience! If you like what you see and have a project
-            you need coded, don't hestiate to contact me.
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hestiate to contact me.
           </p>
           <button>Get My Resume</button>
-          <img src="photo/illustration-about-me-2-desktop.svg" alt="" id="about-img">
+          <img
+            src="photo/illustration-about-me-2-desktop.svg"
+            alt=""
+            id="about-img"
+          />
         </div>
         <div class="about-container">
           <div class="about-card">
@@ -185,7 +191,7 @@
             </div>
           </div>
           <div class="about-card">
-            <img src="photo/icon-skills.svg" alt="" class="about-img"/>
+            <img src="photo/icon-skills.svg" alt="" class="about-img" />
             <div class="about-text">
             <h3 class="project-title">Skills</h3>
             <ul class="about-tag">
@@ -235,8 +241,12 @@
         </ul>
         <p class="footeremail">kaungmyatkyaw7012@gmail.com</p>
     </section>
-    <img src="photo/Frame@2x.png" alt="" id="frame1">
-    <img src="photo/illustration-2-contact-form-desktop@2x.png" alt="" id="frame2">
+    <img src="photo/Frame@2x.png" alt="" id="frame1" />
+    <img
+      src="photo/illustration-2-contact-form-desktop@2x.png"
+      alt=""
+      id="frame2"
+    />
 
     <footer>
       <ul class="social-media-icon">
@@ -257,5 +267,7 @@
         </li>
       </ul>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

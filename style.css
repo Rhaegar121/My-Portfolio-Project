@@ -38,7 +38,7 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
   text-decoration: none;
   margin: 40px;
 }
@@ -464,11 +464,13 @@ footer {
   nav {
     display: none;
   }
+
   .toolbar #menu {
     top: 0;
     display: flex;
     justify-content: center;
   }
+
   .toolbar #menu .nav-item {
     display: inline;
     font-size: 15px;

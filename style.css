@@ -334,14 +334,14 @@ button:active {
   text-align: center;
 }
 
-#work .container .work-container .work-card .text .tag {
+.tag {
   width: 305px;
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
 }
 
-#work .container .work-container .work-card .text .tag li {
+.tag li {
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
@@ -447,6 +447,64 @@ textarea::placeholder {
 
 footer {
   display: none;
+}
+
+#detail {
+  background-color: #C1C7D0;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.detail {
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 20px 16px 26px 16px;
+}
+.detail img {
+  width: 100%;
+  height: auto;
+}
+.detail #close {
+  position: absolute;
+  top: 8%;
+  right: 12%;
+  font-size: 25px;
+  color: #fff;
+  z-index: 999;
+}
+.detail #close:hover {
+  color: #091e42;
+}
+.detail .detail-caption .detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #172B4D;
+  margin-top: 10px;
+}
+.detail .detail-caption .tag {
+  justify-content: flex-start;
+  gap: 8px;
+}
+.detail .detail-text {
+  color: #344563;
+  line-height: 24px;
+}
+.detail .detail-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.detail .detail-button button {
+  padding: 12px 15px;
+}
+.detail .detail-button i {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -636,4 +694,15 @@ footer {
   .footeremail {
     display: none;
   }
+
+  #detail {
+
+  } 
+  .detail {
+
+  }
+  .detail .detail-caption {
+
+  }
+
 }

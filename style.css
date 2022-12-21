@@ -453,6 +453,7 @@ footer {
   background-color: #C1C7D0;
   display: none;
   position: fixed;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -694,15 +695,4 @@ footer {
   .footeremail {
     display: none;
   }
-
-  #detail {
-
-  } 
-  .detail {
-
-  }
-  .detail .detail-caption {
-
-  }
-
 }

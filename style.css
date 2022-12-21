@@ -465,23 +465,20 @@ footer {
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
-  margin: 20px 16px 26px 16px;
+  width: 343px;
+  margin: 20px auto;
+  position: relative;
 }
 
-.detail #mobile-img,
-#desktop-img {
+.detail #img {
   width: 100%;
   height: auto;
 }
 
-.detail #desktop-img {
-  display: none;
-}
-
 .detail #close {
   position: absolute;
-  top: 8%;
-  right: 12%;
+  top: 4%;
+  right: 11%;
   font-size: 25px;
   color: #fff;
   z-index: 99;
@@ -720,22 +717,19 @@ footer {
   }
 
   .detail {
+    width: 920px;
     border-radius: 8px;
-    margin: 122px 260px;
+    margin: 122px auto;
     padding: 78px 24px 44px 24px;
   }
 
-  .detail #mobile-img {
-    display: none;
-  }
-
-  .detail #desktop-img {
-    display: block;
+  .detail #img {
+    border-radius: 8px;
   }
 
   .detail #close {
-    top: 19%;
-    right: 19%;
+    top: 2%;
+    right: 3%;
     color: #67798e;
     background: #ebecf0;
     padding: 8px 12px;
@@ -755,8 +749,8 @@ footer {
 
   .detail .detail-button {
     position: absolute;
-    top: 855px;
-    right: 285px;
+    top: 67%;
+    right: 2.5%;
     gap: 12px;
   }
 

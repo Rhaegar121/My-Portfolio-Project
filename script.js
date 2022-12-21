@@ -1,3 +1,4 @@
+// menu bar
 const bar = document.querySelector('.fa-bars');
 const welcome = document.querySelector('#welcome');
 const menu = document.querySelector('#menu');
@@ -14,23 +15,42 @@ function mobilemenu() {
 bar.addEventListener('click', mobilemenu);
 menu.addEventListener('click', mobilemenu);
 
-const allProjects = [{
-  name: 'Keeping track of hundreds of components',
-  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  mobileImg: 'photo/detail_img.jpg',
-  desktopImg: 'photo/Snapshoot Portfolio.png',
-  mobileTech: ['Ruby on rails', 'CSS', 'JavaScript'],
-  desktopTech: ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-  liveLink: 'https://rhaegar121.github.io/',
-  sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
-}];
+// popup window
+const allProjects = [
+  {
+    name: 'Keeping track of hundreds of components',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    mobileImg: 'photo/detail_img.jpg',
+    desktopImg: 'photo/Snapshoot Portfolio.png',
+    mobileTech: ['Ruby on rails', 'CSS', 'JavaScript'],
+    desktopTech: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    ],
+    liveLink: 'https://rhaegar121.github.io/',
+    sourceLink:
+      'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+  },
+];
 
 allProjects.name = 'Keeping track of hundreds of components';
 allProjects.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 allProjects.mobileImg = 'photo/detail_img.jpg';
 allProjects.desktopImg = 'photo/Snapshoot Portfolio.png';
 allProjects.mobileTech = ['Ruby on rails', 'CSS', 'JavaScript'];
-allProjects.desktopTech = ['Codekit', 'GitHub', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'];
+allProjects.desktopTech = [
+  'Codekit',
+  'GitHub',
+  'Javascript',
+  'Bootstrap',
+  'Terminal',
+  'Codepen',
+];
 allProjects.liveLink = 'https://rhaegar121.github.io/';
 allProjects.sourceLink = 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master';
 
@@ -86,4 +106,20 @@ project.forEach((btn) => {
 const close = document.querySelector('#close');
 close.onclick = () => {
   closeModal();
+};
+
+// form validation
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const error = document.querySelector('#error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    error.textContent = 'Please enter a valid email';
+  } else form.submit();
+});
+
+email.onkeypress = () => {
+  error.textContent = '';
 };

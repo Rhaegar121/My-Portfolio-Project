@@ -125,22 +125,28 @@ email.onkeypress = () => {
 };
 
 // local storage
-const name = document.querySelector('#name');
-const message = document.querySelector('#message');
+const inputs = document.querySelectorAll('#name, #email, #message');
+const inputData = Array.from(inputs);
 const dataObj = {
   Name: '',
   Email: '',
   Message: '',
 };
-dataObj.Name = name.value;
-dataObj.Email = email.value;
-dataObj.Message = message.value;
-localStorage.setItem(dataObj, JSON.stringify(dataObj));
+inputData.forEach((input) => {
+  input.addEventListener('input', () => {
+    dataObj.Name = inputData[0].value;
+    dataObj.Email = inputData[1].value;
+    dataObj.Message = inputData[2].value;
+    localStorage.setItem('nameData', dataObj.Name);
+    localStorage.setItem('emailData', dataObj.Email);
+    localStorage.setItem('messageData', dataObj.Message);
+  });
+});
 window.onload = () => {
-  if (localStorage) {
-    const data = JSON.parse(localStorage);
-    name.value = data.dataObj;
-    email.value = data.dataObj;
-    message.value = data.dataObj;
+  const data = localStorage;
+  if (data) {
+    inputData[0].value = data.nameData;
+    inputData[1].value = data.emailData;
+    inputData[2].value = data.messageData;
   }
 };

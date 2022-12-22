@@ -137,16 +137,14 @@ inputData.forEach((input) => {
     dataObj.Name = inputData[0].value;
     dataObj.Email = inputData[1].value;
     dataObj.Message = inputData[2].value;
-    localStorage.setItem('nameData', dataObj.Name);
-    localStorage.setItem('emailData', dataObj.Email);
-    localStorage.setItem('messageData', dataObj.Message);
+    localStorage.setItem('dataObj', JSON.stringify(dataObj));
   });
 });
 window.onload = () => {
-  const data = localStorage;
+  const data = JSON.parse(localStorage.getItem('dataObj'));
   if (data) {
-    inputData[0].value = data.nameData;
-    inputData[1].value = data.emailData;
-    inputData[2].value = data.messageData;
+    inputData[0].value = data.Name;
+    inputData[1].value = data.Email;
+    inputData[2].value = data.Message;
   }
 };

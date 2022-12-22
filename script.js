@@ -123,3 +123,24 @@ form.addEventListener('submit', (event) => {
 email.onkeypress = () => {
   error.textContent = '';
 };
+
+// local storage
+const name = document.querySelector('#name');
+const message = document.querySelector('#message');
+const dataObj = {
+  Name: '',
+  Email: '',
+  Message: '',
+};
+dataObj.Name = name.value;
+dataObj.Email = email.value;
+dataObj.Message = message.value;
+localStorage.setItem(dataObj, JSON.stringify(dataObj));
+window.onload = () => {
+  if (localStorage) {
+    const data = JSON.parse(localStorage);
+    name.value = data.dataObj;
+    email.value = data.dataObj;
+    message.value = data.dataObj;
+  }
+};

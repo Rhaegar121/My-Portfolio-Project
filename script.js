@@ -91,9 +91,6 @@ function openModal() {
 
 function closeModal() {
   detail.style.display = 'none';
-  while (modalTag.firstChild) {
-    modalTag.removeChild(modalTag.firstChild);
-  }
 }
 
 const project = [...document.querySelectorAll('.button')];

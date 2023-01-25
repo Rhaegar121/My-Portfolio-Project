@@ -4,55 +4,74 @@ const welcome = document.querySelector('#welcome');
 const menu = document.querySelector('#menu');
 function mobilemenu() {
   bar.classList.toggle('fa-xmark');
-  if (menu.style.display === 'block' && welcome.style.display === 'none') {
+  if (menu.style.display === 'flex' && welcome.style.display === 'none') {
     menu.style.display = 'none';
-    welcome.style.display = 'block';
+    welcome.style.display = 'flex';
   } else {
-    menu.style.display = 'block';
+    menu.style.display = 'flex';
     welcome.style.display = 'none';
   }
 }
 bar.addEventListener('click', mobilemenu);
-menu.addEventListener('click', mobilemenu);
+// menu.addEventListener('click', mobilemenu);
 
 // popup window
 const allProjects = [
   {
-    name: 'Keeping track of hundreds of components',
+    name: 'World Digital Economy & Technology Summit',
+    description:
+      'This project is the World Economy & Technology summit website based on the design of Cindy Shin in Behance which contains both mobile and desktop versions and consists of two pages (home and about pages). Built with HTML, CSS, and Javascript in Microverse Module 1.',
+    image: 'photo/wdet screenshot 2.jpg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/WDET-Summit/',
+    sourceLink: 'https://github.com/Rhaegar121/WDET-Summit',
+  },
+  {
+    name: 'Awesome Books Project ES6',
+    description:
+    'Awesome Books Project is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.',
+    image: 'photo/awesome book screenshot 1.jpg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/Awesome-Books-ES6/',
+    sourceLink: 'https://github.com/Rhaegar121/Awesome-Books-ES6',
+  },
+  {
+    name: 'To Do List Project',
+    description:
+    'To Do List Project is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Mainly built with javascript in Microverse Module 2.',
+    image: 'photo/To do list screenshot .jpg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/To-Do-list/dist/',
+    sourceLink: 'https://github.com/Rhaegar121/To-Do-list',
+  },
+  {
+    name: 'Keeping track of hundreds of components1',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    mobileImg: 'photo/detail_img.jpg',
-    desktopImg: 'photo/Snapshoot Portfolio.png',
-    mobileTech: ['Ruby on rails', 'CSS', 'JavaScript'],
-    desktopTech: [
-      'Codekit',
-      'GitHub',
-      'Javascript',
-      'Bootstrap',
-      'Terminal',
-      'Codepen',
-    ],
+    image: 'photo/detail_img.jpg',
+    tech: ['Ruby on rails', 'CSS', 'JavaScript'],
     liveLink: 'https://rhaegar121.github.io/',
-    sourceLink:
-      'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+  },
+  {
+    name: 'Keeping track of hundreds of components1',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: 'photo/detail_img.jpg',
+    tech: ['Ruby on rails', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/',
+    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+  },
+  {
+    name: 'Keeping track of hundreds of components1',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: 'photo/detail_img.jpg',
+    tech: ['Ruby on rails', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/',
+    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
   },
 ];
-
-allProjects.name = 'Keeping track of hundreds of components';
-allProjects.description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-allProjects.mobileImg = 'photo/detail_img.jpg';
-allProjects.desktopImg = 'photo/Snapshoot Portfolio.png';
-allProjects.mobileTech = ['Ruby on rails', 'CSS', 'JavaScript'];
-allProjects.desktopTech = [
-  'Codekit',
-  'GitHub',
-  'Javascript',
-  'Bootstrap',
-  'Terminal',
-  'Codepen',
-];
-allProjects.liveLink = 'https://rhaegar121.github.io/';
-allProjects.sourceLink = 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master';
 
 const detail = document.querySelector('#detail');
 const detailTitle = document.querySelector('.detail-title');
@@ -61,51 +80,56 @@ const img = document.querySelector('#img');
 const modalTag = document.querySelector('#modal-tag');
 const liveLink = document.querySelector('#live-link');
 const sourceLink = document.querySelector('#source-link');
-let screenWidth = window.innerWidth;
-window.onresize = () => {
-  screenWidth = window.innerWidth;
-};
+// let screenWidth = window.innerWidth;
+// window.onresize = () => {
+//   screenWidth = window.innerWidth;
+// };
 
-function openModal() {
+// function openModal() {
+//   detail.style.display = 'block';
+//   detailTitle.textContent = allProjects.name;
+//   detailText.textContent = allProjects.description;
+//   liveLink.href = allProjects.liveLink;
+//   sourceLink.href = allProjects.sourceLink;
+//   if (screenWidth < 768) {
+//     img.setAttribute('src', allProjects.mobileImg);
+//     for (let i = 0; i < allProjects.mobileTech.length; i += 1) {
+//       const liTag = document.createElement('li');
+//       liTag.textContent = allProjects.mobileTech[i];
+//       modalTag.appendChild(liTag);
+//     }
+//   } else {
+//     img.setAttribute('src', allProjects.desktopImg);
+//     for (let i = 0; i < allProjects.desktopTech.length; i += 1) {
+//       const liTag = document.createElement('li');
+//       liTag.textContent = allProjects.desktopTech[i];
+//       modalTag.appendChild(liTag);
+//     }
+//   }
+// }
+
+const projectBtn = [...document.querySelectorAll('.button')];
+projectBtn.forEach((item, i) => item.addEventListener('click', () => {
   detail.style.display = 'block';
-  detailTitle.textContent = allProjects.name;
-  detailText.textContent = allProjects.description;
-  liveLink.href = allProjects.liveLink;
-  sourceLink.href = allProjects.sourceLink;
-  if (screenWidth < 768) {
-    img.setAttribute('src', allProjects.mobileImg);
-    for (let i = 0; i < allProjects.mobileTech.length; i += 1) {
-      const liTag = document.createElement('li');
-      liTag.textContent = allProjects.mobileTech[i];
-      modalTag.appendChild(liTag);
-    }
-  } else {
-    img.setAttribute('src', allProjects.desktopImg);
-    for (let i = 0; i < allProjects.desktopTech.length; i += 1) {
-      const liTag = document.createElement('li');
-      liTag.textContent = allProjects.desktopTech[i];
-      modalTag.appendChild(liTag);
-    }
+  const project = allProjects[i];
+  detailTitle.textContent = project.name;
+  detailText.textContent = project.description;
+  liveLink.href = project.liveLink;
+  sourceLink.href = project.sourceLink;
+  img.setAttribute('src', project.image);
+  for (let i = 0; i < project.tech.length; i += 1) {
+    const liTag = document.createElement('li');
+    liTag.textContent = project.tech[i];
+    modalTag.appendChild(liTag);
   }
-}
+}));
 
-function closeModal() {
+const close = document.querySelector('#close');
+close.onclick = () => {
   detail.style.display = 'none';
   while (modalTag.firstChild) {
     modalTag.removeChild(modalTag.firstChild);
   }
-}
-
-const project = [...document.querySelectorAll('.button')];
-project.forEach((btn) => {
-  btn.onclick = () => {
-    openModal();
-  };
-});
-
-const close = document.querySelector('#close');
-close.onclick = () => {
-  closeModal();
 };
 
 // form validation

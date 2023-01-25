@@ -24,6 +24,7 @@
 
 .toolbar #menu {
   display: none;
+  flex-direction: column;
   position: absolute;
   top: 10%;
   height: 100vh;
@@ -41,6 +42,15 @@
   color: #3a4a42;
   text-decoration: none;
   margin: 40px;
+  height: auto;
+}
+
+.toolbar #menu .nav-item:hover {
+  color: #36b37e;
+}
+
+.toolbar #menu .nav-item:active {
+  color: #008552;
 }
 
 .toolbar nav .fa-bars {
@@ -53,7 +63,8 @@
   width: 305px;
   margin: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 .tag li {
@@ -70,7 +81,7 @@
 
 .headline {
   background-image: url(photo/header-illsutration-mobile@2x.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0;
@@ -93,7 +104,6 @@
 
 .headline .primary #intro-name {
   color: #172b4d;
-  transition: font-size 0.5s ease-out;
   animation: 3s 1 slidein;
 }
 
@@ -125,12 +135,6 @@
   }
 }
 
-.headline .primary #intro-name:hover {
-  font-size: 55px;
-  color: #36b37f;
-  cursor: pointer;
-}
-
 .supporting-text {
   font-size: 20px;
   font-weight: 400;
@@ -140,7 +144,7 @@
 }
 
 .headline .social-media-icon {
-  width: 174px;
+  width: 180px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -151,9 +155,13 @@
   list-style: none;
 }
 
-.headline .social-media-icon li img {
-  width: 19.99px;
-  height: 19.96px;
+.headline .social-media-icon li a i {
+  color: #42526e;
+  font-size: 23px;
+}
+
+.headline .social-media-icon li a i:active {
+  color: #008552;
 }
 
 .headline .action .fa-chevron-down {
@@ -162,12 +170,16 @@
   padding: 15px;
 }
 
+.headline .action .fa-chevron-down:active {
+  color: #008552;
+}
+
 button {
   float: left;
   margin-right: 3px;
+  padding: 12px;
   background: #36b37f;
   border-radius: 4px;
-  padding: 12px;
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
@@ -292,10 +304,9 @@ button:active {
 /* work section */
 #work {
   position: relative;
-  border: 1px solid white;
 }
 
-#work .container .work-title {
+#work .work-title {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -304,7 +315,7 @@ button:active {
   text-transform: capitalize;
   width: 327px;
   position: absolute;
-  top: -15px;
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
   background-image: linear-gradient(#36b37e, #36b37e);
@@ -315,11 +326,12 @@ button:active {
 }
 
 #work .container .work-container {
-  margin-top: 200px;
+  margin-top: 130px;
+  padding-top: 180px;
   display: grid;
   row-gap: 20px;
   grid-template-columns: 327px;
-  grid-template-rows: 474px 474px 474px 474px 474px 474px;
+  grid-template-rows: 430px 460px 430px 430px 430px 430px;
   justify-content: center;
 }
 
@@ -334,7 +346,7 @@ button:active {
 }
 
 #work .container .work-container .work-card .work-img {
-  height: 252px;
+  height: 210px;
   width: 325px;
 }
 
@@ -342,7 +354,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 14px 32px;
+  padding: 32px;
 }
 
 #work .container .work-container .work-card .text .project-title {
@@ -479,14 +491,15 @@ footer {
 .detail #img {
   width: 100%;
   height: auto;
+  margin-top: 23px;
 }
 
 .detail #close {
   position: absolute;
-  top: 4%;
-  right: 11%;
-  font-size: 25px;
-  color: #fff;
+  top: 0.5%;
+  right: 2.7%;
+  font-size: 28px;
+  color: #67798e;
   z-index: 99;
 }
 
@@ -522,8 +535,23 @@ footer {
   margin-top: 16px;
 }
 
-.detail .detail-button button {
+.detail .detail-button a {
   padding: 12px 15px;
+  background: #36b37f;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+}
+
+.detail .detail-button a:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transform: scale(1.05);
 }
 
 .detail .detail-button i {
@@ -549,7 +577,9 @@ footer {
   .toolbar #menu {
     top: 0;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    height: auto;
   }
 
   .toolbar #menu .nav-item {
@@ -557,16 +587,20 @@ footer {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    z-index: 99;
+  }
+
+  .toolbar #menu .nav-item:hover {
+    cursor: pointer;
   }
 
   .headline {
     background-image: url(photo/Header-llustration-desktop@2x.png);
-    background-size: contain;
-    background-position: center;
+    background-size: 1530px 1100px;
     width: 100%;
-    height: 1434.3px;
-    transform: translateY(-234px);
-    padding: 410px 375px 610px 375px;
+    height: auto;
+    transform: translateY(-40px);
+    padding: 220px 375px 310px 375px;
     gap: 24px;
     justify-content: space-evenly;
   }
@@ -586,7 +620,7 @@ footer {
   }
 
   #work {
-    margin-top: -200px;
+    margin-top: 150px;
   }
 
   #work .container .work-title {
@@ -596,13 +630,14 @@ footer {
 
   #work .container .work-container {
     grid-template-columns: 369px 369px 369px;
-    grid-template-rows: 474px 474px;
+    grid-template-rows: 430px 430px;
     gap: 24px;
-    margin-top: 100px;
+    padding-top: 120px;
+    margin-top: 0;
   }
 
   #work .container .work-container .work-card .work-img {
-    width: 369px;
+    width: 367px;
   }
 
   #about {
@@ -725,8 +760,8 @@ footer {
   .detail {
     width: 920px;
     border-radius: 8px;
-    margin: 122px auto;
-    padding: 78px 24px 44px 24px;
+    margin: 80px auto;
+    padding: 40px 24px 44px 24px;
   }
 
   .detail #img {
@@ -734,8 +769,8 @@ footer {
   }
 
   .detail #close {
-    top: 2%;
-    right: 3%;
+    top: 1%;
+    right: 1%;
     color: #67798e;
     background: #ebecf0;
     padding: 8px 12px;
@@ -754,13 +789,11 @@ footer {
   }
 
   .detail .detail-button {
-    position: absolute;
-    top: 67%;
-    right: 2.5%;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 15px;
   }
 
-  .detail .detail-button button {
+  .detail .detail-button a {
     border-radius: 8px;
   }
 }

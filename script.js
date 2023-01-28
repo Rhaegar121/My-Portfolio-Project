@@ -45,13 +45,22 @@ const allProjects = [
     sourceLink: 'https://github.com/Rhaegar121/To-Do-list',
   },
   {
-    name: 'Keeping track of hundreds of components1',
+    name: 'Tic Tac Toe',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: 'photo/detail_img.jpg',
-    tech: ['Ruby on rails', 'CSS', 'JavaScript'],
-    liveLink: 'https://rhaegar121.github.io/',
-    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+      'Tic Tac Toe is a simple and classic game that is played on a 3x3 grid. The game is typically played with two players, one using “X” and the other using “O”. Mainly built with JavaScript.',
+    image: 'photo/tic tac toe screenshot 2.jpg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/Tic-Tac-Toe/',
+    sourceLink: 'https://github.com/Rhaegar121/Tic-Tac-Toe',
+  },
+  {
+    name: 'Guess The Word',
+    description:
+      'Guess The Word is a fun letter puzzle game where the player have to guess the hidden word using the clues that the game gives. The game ends if the player guesses the correct word or if he chooses the wrong letter 8 times. Mainly built with Javascript.',
+    image: 'photo/guess the word screenshot 2.jpg',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://rhaegar121.github.io/Guess-the-word/',
+    sourceLink: 'https://github.com/Rhaegar121/Guess-the-word',
   },
   {
     name: 'Keeping track of hundreds of components1',
@@ -60,16 +69,7 @@ const allProjects = [
     image: 'photo/detail_img.jpg',
     tech: ['Ruby on rails', 'CSS', 'JavaScript'],
     liveLink: 'https://rhaegar121.github.io/',
-    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
-  },
-  {
-    name: 'Keeping track of hundreds of components1',
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: 'photo/detail_img.jpg',
-    tech: ['Ruby on rails', 'CSS', 'JavaScript'],
-    liveLink: 'https://rhaegar121.github.io/',
-    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project/tree/master',
+    sourceLink: 'https://github.com/Rhaegar121/My-Portfolio-Project',
   },
 ];
 

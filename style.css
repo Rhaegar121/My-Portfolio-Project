@@ -448,6 +448,11 @@ textarea::placeholder {
   margin-top: 45px;
 }
 
+#form-session .social-media-icon-form li a i {
+  color: #42526e;
+  font-size: 20px;
+}
+
 #form-session .footeremail {
   margin-top: 15px;
   text-align: center;
@@ -741,11 +746,20 @@ footer {
     justify-content: center;
     border-top: 1px solid #dfe1e6;
     padding: 25px 0;
-    gap: 18px;
+    gap: 23px;
   }
 
   footer .social-media-icon li {
     list-style: none;
+  }
+
+  footer .social-media-icon li a i {
+    color: #42526e;
+    font-size: 23px;
+  }
+
+  footer .social-media-icon li a i:active {
+    color: #008552;
   }
 
   .footeremail {

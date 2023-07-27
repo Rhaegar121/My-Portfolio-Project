@@ -84,7 +84,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://rhaegar121.github.io/My-Portfolio-Project/)
+- [Live Demo Link](https://microverse-porfolio-project.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
